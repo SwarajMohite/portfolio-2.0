@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Swaraj's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(1, 1, 34);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(17, 17, 69);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(49, 49, 158);
+            /* text-size-adjust: 1.01rem; */
+        }
+
+        .left {
+            font-size: 1.6rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+        }
+
+        .firstSection>div {
+            width: 25%;
+
+        }
+
+        .leftSection {
+            /* background-color: rgb(102, 102, 189); */
+            font-size: 2.8rem;
+            margin: 60px 0;
+        }
+
+        .rightSection img {
+            /* background-color: rgb(102, 102, 189); */
+            width: 90%;
+            
+            /* margin: 50px 0; */
+        }
+
+        .name {
+            color: rgb(130, 24, 229);
+        }
+
+        #element {
+            color: rgb(130, 24, 229);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+        }
+        main hr{
+            border: 0;
+            height: 2px;
+            margin: 10px 60px;
+            background-color: rgb(31, 31, 48);
+        }
+        .grey-color{
+            color:rgb(115, 114, 114);
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Swaraj's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="name">Swaraj</span>
+                <div>and I am </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="Programmer">
+            </div>
+        </section>
+        <hr><br><br>
+        <section class="secondSection">
+            <span class="grey-color">What I Have Done So Far</span>
+            <h1>Past Experience</h1>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typeed = new Typeed('#element', {
+            strings: ['A <i>Student</i>', 'A <i>life long Learner</i>', 'A <i>Programmer</i>'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
